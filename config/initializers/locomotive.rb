@@ -1,7 +1,7 @@
 Locomotive.configure do |config|
 
   # enable it if you want Locomotive to render the site of the Rails application embedding the engine
-  config.host = "#{ENV['HEROKU_APP_NAME']}.herokuapp.com" if ENV['HEROKU_APP_NAME']
+  config.host = 'engine.sanderschekman.com'
 
   # list of forbidden handles for a site because there are in conflicts with internal resources.
   # config.reserved_site_handles = %w(sites my_account password sign_in sign_out)
@@ -39,7 +39,7 @@ Locomotive.configure do |config|
   #
   # Ex:
   # config.mailer_sender = 'support'
-  config.mailer_sender = 'support@dummy.com'
+  config.mailer_sender = 'hi@sanderschekman.com'
 
   # Add the checksum of a theme asset at the end of its path to allow public caching.
   # By default, it's disabled.
