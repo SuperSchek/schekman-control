@@ -1,4 +1,6 @@
-# [Locomotive](https://github.com/locomotivecms/engine) on [Heroku](http://heroku.com)
+
+
+# Schekman-Control by [Locomotive](https://github.com/locomotivecms/engine)
 
 Locomotive is designed to save your time and help you focus on what matters: front-end technology, standard development process and no learning time for your client. Visit the project's website at <http://locomotive.works/>, or read the docs on <https://locomotive-v3.readme.io/>.
 
