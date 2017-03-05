@@ -41,6 +41,9 @@
     "S3_ASSET_HOST_URL": {
       "description": "Optional custom CDN asset host url.",
       "required": false
-    }
+    },
+    "HEROKU_APP_URL": {
+      "description": "Set to engine.sanderschekman.com for PROD and to heroku app url for staging.",
+      "required": true
   }
-} 
+}
