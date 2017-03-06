@@ -41,7 +41,7 @@ gem 'puma_worker_killer'
 gem 'derailed', group: :development
 
 # DEV
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'af10d4f'
+# gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'af10d4f'
 # gem 'locomotivecms_steam',  github: 'locomotivecms/steam', ref: '60732f3'
 
 # GITHUB
@@ -49,7 +49,7 @@ gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'af10d4f'
 # gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'master'
 
 # STABLE
-# gem 'locomotivecms', '~> 3.1.1'
+gem 'locomotivecms', '~> 3.2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
