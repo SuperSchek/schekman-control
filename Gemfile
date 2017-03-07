@@ -41,7 +41,7 @@ gem 'puma_worker_killer'
 gem 'derailed', group: :development
 
 # DEV
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '7b79f69'
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'af10d4f'
 # gem 'locomotivecms_steam',  github: 'locomotivecms/steam', ref: '60732f3'
 
 # GITHUB
