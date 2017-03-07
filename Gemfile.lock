@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/locomotivecms/engine.git
-  revision: 7b79f6937b11648daa27ab4eb25123e09425be39
-  ref: 7b79f69
+  revision: af10d4f539c893692e329e4a885bd7b2fd320a99
+  ref: af10d4f
   specs:
-    locomotivecms (3.2.0)
+    locomotivecms (3.1.1)
       actionmailer-with-request (~> 0.4.0)
       autoprefixer-rails (~> 6.3.3.1)
       bazaar (~> 0.0.2)
@@ -11,7 +11,7 @@ GIT
       bootstrap-sass (~> 3.3.6)
       carrierwave-mongoid (~> 0.8.1)
       codemirror-rails (~> 5.6)
-      custom_fields (~> 2.7.0)
+      custom_fields (~> 2.7.0.rc1)
       devise (~> 3.5.1)
       devise-encryptable (~> 0.2.0)
       dragonfly (~> 1.0.7)
@@ -24,7 +24,7 @@ GIT
       jquery-ui-rails (~> 5.0.3)
       json-schema (~> 2.6.1)
       kaminari (~> 0.16.3)
-      locomotivecms_steam (~> 1.2.0)
+      locomotivecms_steam (~> 1.1.1)
       mime-types (~> 2.6.2)
       mimetype-fu (~> 0.1.2)
       mongo_session_store-rails4 (~> 6.0.0)
@@ -46,7 +46,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.3.2)
+    RedCloth (4.2.9)
     actionmailer (4.2.8)
       actionpack (= 4.2.8)
       actionview (= 4.2.8)
@@ -185,7 +185,6 @@ GEM
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack (>= 1.3.0)
-    duktape (1.3.0.6)
     equalizer (0.0.11)
     erubis (2.7.0)
     excon (0.55.0)
@@ -211,6 +210,8 @@ GEM
     grape-entity (0.4.5)
       activesupport
       multi_json (>= 1.3.2)
+    haml (4.0.7)
+      tilt
     hashie (3.5.5)
     heapy (0.1.2)
     heroics (0.0.21)
@@ -248,14 +249,14 @@ GEM
       attr_extras (~> 4.4.0)
       colorize
       stringex (~> 2.6.0)
-    locomotivecms_steam (1.2.0)
-      RedCloth (~> 4.3.2)
+    locomotivecms_steam (1.1.1)
+      RedCloth (~> 4.2.9)
       autoprefixer-rails (~> 6.3.3.1)
       chronic (~> 0.10.2)
       coffee-script (~> 2.4.1)
       compass (~> 1.0.3)
       dragonfly (~> 1.0.12)
-      duktape (~> 1.3.0.6)
+      haml (~> 4.0.6)
       httparty (~> 0.13.6)
       kramdown (~> 1.10.0)
       locomotivecms-solid (~> 4.0.1)
@@ -264,8 +265,7 @@ GEM
       mimetype-fu (~> 0.1.2)
       moneta (~> 0.8.0)
       morphine (~> 0.1.1)
-      nokogiri (~> 1.6.8)
-      pony (~> 1.11)
+      nokogiri (~> 1.6.7.2)
       rack-cache (~> 1.6.1)
       rack-rewrite (~> 1.5.1)
       rack_csrf (~> 2.5.0)
@@ -279,7 +279,7 @@ GEM
     memory_profiler (0.9.8)
     mime-types (2.6.2)
     mimetype-fu (0.1.2)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.0.0)
     minitest (5.10.1)
     moneta (0.8.1)
     monetize (1.4.0)
@@ -305,8 +305,8 @@ GEM
     multi_json (1.11.3)
     multi_xml (0.6.0)
     net-ssh (3.0.2)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.10)
       nokogiri
     nprogress-rails (0.1.6.8)
@@ -314,8 +314,6 @@ GEM
     orm_adapter (0.5.0)
     platform-api (0.3.0)
       heroics (~> 0.0.10)
-    pony (1.11)
-      mail (>= 2.0)
     puma (2.15.3)
     puma_worker_killer (0.0.7)
       get_process_mem (~> 0.2)
