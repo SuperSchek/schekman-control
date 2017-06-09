@@ -5,18 +5,34 @@
 
 .public-box.without-padding
   .public-intro.with-padding
-    h3= t('.title')
-    p= t('.description')
-
-  - @sites.each do |site|
-    var niceNicy = site.name
-    - if niceNicy.include? "hi"
-        h5= site.name
-        h4= "True"
+    h3= 'Production Sites'
+    p= 'All productions sites you have access to can be found below. Click one to be redirected to the content management section of that site.'
 
   .public-entries
-    = render @sites
+    - @sites.each do |site|
+      - unless site.name.include? "Staging"
+        = link_to dashboard_url(site), class: 'public-entry' do
+          = image_tag site_picture_url(site), alt: site.name
+          .public-entry-info
+            h5= site.name.truncate(35)
+            p= site.main_domain.try(:truncate, 45) || t('.no_domain')
+            i.fa.fa-arrow-right
 
   = link_to new_site_url, class: 'public-entry is-add' do
     i.fa.fa-plus
     = t('.new')
+
+.public-box.without-padding
+  .public-intro.with-padding
+    h3= 'Staging Sites'
+    p= 'All staging environments you have access to can be found below. Create and edit content as needed for testing. Changes will not affect to production.'
+
+  .public-entries
+    - @sites.each do |site|
+      - if site.name.include? "Staging"
+        = link_to dashboard_url(site), class: 'public-entry' do
+          = image_tag site_picture_url(site), alt: site.name
+          .public-entry-info
+            h5= site.name.truncate(35)
+            p= site.main_domain.try(:truncate, 45) || t('.no_domain')
+            i.fa.fa-arrow-right
