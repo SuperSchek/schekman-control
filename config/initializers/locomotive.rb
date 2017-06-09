@@ -58,6 +58,6 @@ Locomotive.configure do |config|
   # Note: by default, rack/cache is disabled in the Heroku platform
 
   # Disable User Registration
-  Locomotive.config.enable_registration = false
+  # Locomotive.config.enable_registration = false
 
 end
