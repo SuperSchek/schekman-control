@@ -4,7 +4,7 @@
 Make sure you're using ruby-2.3.1 and have bundler installed.
 
 ```
-git clone [this repo]
+git clone https://github.com/SuperSchek/schekman-control.git
 cd schekman-control
 bundle install
 ```
