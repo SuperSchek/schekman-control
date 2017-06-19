@@ -49,7 +49,7 @@ gem 'derailed', group: :development
 
 # GITHUB
 # gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'master'
-gem 'locomotivecms_steam', github: 'superschek/steam', branch: 'master'
+# gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'master'
 
 # STABLE
 gem 'locomotivecms', '~> 3.3.0.rc2'
