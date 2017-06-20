@@ -71,4 +71,5 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'heroics', '= 0.0.21'
 gem 'platform-api'
