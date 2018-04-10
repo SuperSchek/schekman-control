@@ -52,7 +52,7 @@ gem 'derailed', group: :development
 # gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'master'
 
 # STABLE
-gem 'locomotivecms', '~> 3.3.0.rc2'
+gem 'locomotivecms', '~> 3.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
