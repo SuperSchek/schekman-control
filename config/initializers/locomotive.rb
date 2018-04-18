@@ -38,7 +38,7 @@ Locomotive.configure do |config|
   # on your deployment target (server, Heroku, Bushido, ...etc)
   #
   # Ex:
-  # config.mailer_sender = 'support'
+  config.mailer_sender = 'engine'
   # config.mailer_sender = ENV['MAIL_SENDER']
 
   # Add the checksum of a theme asset at the end of its path to allow public caching.
