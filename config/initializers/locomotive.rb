@@ -39,7 +39,7 @@ Locomotive.configure do |config|
   #
   # Ex:
   # config.mailer_sender = 'support'
-  config.mailer_sender = ENV['MAIL_SENDER']
+  # config.mailer_sender = ENV['MAIL_SENDER']
 
   # Add the checksum of a theme asset at the end of its path to allow public caching.
   # By default, it's disabled.
